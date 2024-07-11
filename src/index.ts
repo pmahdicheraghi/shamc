@@ -16,14 +16,18 @@ export default class ShamcDate extends Date {
 
 export const shamcToGregorian = (jy: number, jm: number, jd: number) => {
   let gy = jy + 621;
-  let gm = jm;
-  let gd = jd;
-
+  let gd = (jd + 20) % 30 + 1;
+  let gm = (jm + 2) % 12;
+  
   const date = new Date(gy, gm, gd);
+  let i = 0;
   while (true) {
     const [y, m, d] = date.toLocaleDateString('fa-IR-u-nu-latn').split("/").map(Number);
     if (y === jy && m === jm && d === jd) break;
+    if (i > 3) throw new RangeError("Invalid Date")
     date.setFullYear(date.getFullYear() + (jy - y), date.getMonth() + (jm - m), date.getDate() + (jd - d));
+    i++;
   }
+
   return [date.getFullYear(), date.getMonth() + 1, date.getDate()];
 }
