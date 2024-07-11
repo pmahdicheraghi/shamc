@@ -1,15 +1,30 @@
 {
   "name": "shamc",
-  "version": "1.0.1",
-  "description": "",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "version": "1.0.5",
+  "description": "The Shamc package is a lightweight JavaScript library for working with jalali date. It provides a simple and intuitive API for performing common date operations compatible with javascript built-in Date object.",
+  "type": "module",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
+    "build": "tsup",
     "test": "jest"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmahdicheraghi/shamc"
+  },
+  "keywords": [
+    "calendar",
+    "shamsi",
+    "jalali",
+    "typescript"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -17,6 +32,7 @@
     "@types/node": "^20.14.10",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.2",
+    "tsup": "^8.1.0",
     "typescript": "^5.5.3"
   }
 }

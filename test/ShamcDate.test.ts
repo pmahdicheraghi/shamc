@@ -1,4 +1,4 @@
-import ShamcDate from "../src";
+import ShamcDate from "../src/index";
 
 test('ShamcDate should return correct month name', () => {
   const date = new ShamcDate('2020/01/01');

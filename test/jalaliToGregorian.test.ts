@@ -1,4 +1,4 @@
-import { shamcToGregorian } from "../src/utils";
+import { shamcToGregorian } from "../src/index";
 
 test('jalaliToGregorian should return correct gregorian date', () => {
   expect(shamcToGregorian(1398, 10, 11)).toEqual([2020, 1, 1]);

@@ -1,14 +1,13 @@
-# ShamcDate
+# Shamc
 
-The ShamcDate package is a lightweight JavaScript library for working with dates and times. It provides a simple and intuitive API for performing common date and time operations.
+The Shamc package is a lightweight JavaScript library for working with jalali date. It provides a simple and intuitive API for performing common date operations compatible with javascript built-in Date object.
 
 ## Features
 
-- Parsing and formatting dates and times
-- Manipulating dates and times (adding/subtracting days, months, years, etc.)
-- Comparing dates and times
-- Calculating the difference between two dates or times
+- Parsing and formatting dates
+- Converting Jalali to Gregorian
 - Working with time zones
+- Compatible with javascript built-in Date object
 
 ## Installation
 
@@ -58,4 +57,4 @@ Contributions are welcome! If you have any ideas, suggestions, or bug reports, p
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/pmahdicheraghi/shamc/LICENSE) file for more information.
+This project is licensed under the ISC License.
