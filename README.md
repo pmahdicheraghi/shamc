@@ -41,7 +41,7 @@ console.log(date.toShamcString());        // "1398/10/11"
 Or you can create a date from Jalali date string:
 
 ```javascript
-const date2 = ShamcDate.fromJalali('1398/10/11');
+const date2 = ShamcDate.fromShamc('1398/10/11');
 console.log(date2.getShamcMonthName());    // "دی"
 console.log(date2.getShamcMonth());        // 9
 console.log(date2.getShamcDayName());      // "چهارشنبه"
